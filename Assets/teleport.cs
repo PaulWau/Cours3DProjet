@@ -7,12 +7,16 @@ public class teleport : MonoBehaviour
 {
     public Transform destination;
     public GameObject player;
-    [SerializeField] private CharacterController controller;
+    public GameObject cam;
+    public GameObject lautre;
     
-
-    private void OnCollisionExit(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        controller.transform.position = destination.transform.position;
-        Debug.Log(other.gameObject.name);
+        player.transform.position = destination.transform.position;
+        cam.transform.position = player.transform.position;
+        cam.transform.position = new Vector3(0, 1f, 0);
+        lautre.transform.position = player.transform.position;
+        lautre.transform.position = new Vector3(0, -1.5f, 0);
+        Debug.Log(player.gameObject.name);
     }
 }
