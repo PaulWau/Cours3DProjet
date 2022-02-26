@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/ManageGame.cs.meta
+guid: 1b67fdd4633ae164d9e5e384ecfd99e2
+=======
 guid: a0f900003b105384e88ea80731b4780a
+>>>>>>> Teo:Assets/Louis/Scripts/SimpleCameraController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
