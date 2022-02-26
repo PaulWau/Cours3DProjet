@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Lava
+  m_Shader: {fileID: -6465566751694194690, guid: 45e557ac4186fb24dafd55027377a399, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_36afc975eed94868b1fd3993f8d7a053:
+        m_Texture: {fileID: 2800000, guid: aa0ec2df9e7686149baf5b0d955c667f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9a2186691f844762aa4af7b272d3560f:
+        m_Texture: {fileID: 2800000, guid: b6761f50de749ba4bb76e3578ead6653, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_c8853b4f719546d5a11e5212d00c5d87:
+        m_Texture: {fileID: 2800000, guid: 51f64a9126af24f49abe012d56fd2a94, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Vector2_318eb892a59d43aab00b9b7771c2f830: {r: 0.01, g: 0, b: 0, a: 0}
+    - Vector2_42ce02e9c05d47a28f576bc066189d01: {r: 2, g: 2, b: 0, a: 0}
+    - Vector2_61da5b326e604b4aa5c3355a126e6968: {r: 0, g: 0.05, b: 0, a: 0}
+  m_BuildTextureStacks: []

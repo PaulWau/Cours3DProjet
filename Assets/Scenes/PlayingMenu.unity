@@ -606,14 +606,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e18be66a61d054abe0aa872ca1e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensiValue: 0
-  sensiMax: 1000
-  sensiMin: 50
-  musicVolume: 0
-  soundVolume: 0
-  audioVolumMax: 100
-  audioVolumMin: 0
-  settingsMenu: {fileID: 2610359596908876135, guid: 8fb2118e98e18b6489d02121f868fe2d, type: 3}
 --- !u!1 &739378157
 GameObject:
   m_ObjectHideFlags: 0

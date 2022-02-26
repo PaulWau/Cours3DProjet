@@ -6,65 +6,61 @@ using UnityEngine;
 
 public class InputFieldManager : MonoBehaviour
 {
-    private GameObject gameManager;
-    private GameManager gameManagerClass;
     [SerializeField] private TMP_InputField _affichageText;
 
     private void Start()
     {
-        gameManager = GameObject.Find("GameManager");
-        gameManagerClass = gameManager.GetComponent<GameManager>();
-        _affichageText.text = gameManagerClass.sensiValue.ToString(); //Car tous les input field commencent à 100
+        _affichageText.text = GameManager.sensiValue.ToString(); //Car tous les input field commencent à 100
     }
 
     public void SensiInput(dynamic input)
     {
         int inputValue = int.Parse(input);
-        if (inputValue<gameManagerClass.sensiMin)
+        if (inputValue<GameManager.sensiMin)
         {
-            _affichageText.text = gameManagerClass.sensiMin.ToString();
-            inputValue = gameManagerClass.sensiMin;
+            _affichageText.text = GameManager.sensiMin.ToString();
+            inputValue = GameManager.sensiMin;
 
         }
-        if (inputValue>gameManagerClass.sensiMax)
+        if (inputValue>GameManager.sensiMax)
         {
-            _affichageText.text = gameManagerClass.sensiMax.ToString();
-            inputValue = gameManagerClass.sensiMax;
+            _affichageText.text = GameManager.sensiMax.ToString();
+            inputValue = GameManager.sensiMax;
         }
-        gameManagerClass.sensiValue = inputValue;
+        GameManager.sensiValue = inputValue;
     }
     
     public void SoundInput(dynamic input)
     {
         int inputValue = int.Parse(input);
-        if (inputValue<gameManagerClass.audioVolumMin)
+        if (inputValue<GameManager.audioVolumMin)
         {
-            _affichageText.text = gameManagerClass.audioVolumMin.ToString();
+            _affichageText.text = GameManager.audioVolumMin.ToString();
             inputValue = 0;
 
         }
-        if (inputValue>gameManagerClass.audioVolumMax)
+        if (inputValue>GameManager.audioVolumMax)
         {
-            _affichageText.text = gameManagerClass.audioVolumMax.ToString();
-            inputValue = gameManagerClass.audioVolumMax;
+            _affichageText.text = GameManager.audioVolumMax.ToString();
+            inputValue = GameManager.audioVolumMax;
         }
-        gameManagerClass.soundVolume = inputValue;
+        GameManager.soundVolume = inputValue;
     }
     
     public void MusicInput(dynamic input)
     {
         int inputValue = int.Parse(input);
-        if (inputValue<gameManagerClass.audioVolumMin)
+        if (inputValue<GameManager.audioVolumMin)
         {
-            _affichageText.text = gameManagerClass.audioVolumMin.ToString();
-            inputValue = gameManagerClass.audioVolumMin;
+            _affichageText.text = GameManager.audioVolumMin.ToString();
+            inputValue = GameManager.audioVolumMin;
 
         }
-        if (inputValue>gameManagerClass.audioVolumMax)
+        if (inputValue>GameManager.audioVolumMax)
         {
-            _affichageText.text = gameManagerClass.audioVolumMax.ToString();
-            inputValue = gameManagerClass.audioVolumMax;
+            _affichageText.text = GameManager.audioVolumMax.ToString();
+            inputValue = GameManager.audioVolumMax;
         }
-        gameManagerClass.musicVolume = inputValue;
+        GameManager.musicVolume = inputValue;
     }
 }
