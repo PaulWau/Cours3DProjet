@@ -6,17 +6,15 @@ using UnityEngine;
 public class teleport : MonoBehaviour
 {
     public Transform destination;
-    public GameObject player;
-    public GameObject cam;
-    public GameObject lautre;
-    
+    public GameObject pointdetp;
     private void OnTriggerEnter(Collider other)
     {
-        player.transform.position = destination.transform.position;
-        cam.transform.position = player.transform.position;
-        cam.transform.position = new Vector3(0, 1f, 0);
-        lautre.transform.position = player.transform.position;
-        lautre.transform.position = new Vector3(0, -1.5f, 0);
-        Debug.Log(player.gameObject.name);
+        if (other.name == pointdetp.name)
+        {
+            
+            Debug.Log(this.transform.position);
+            this.transform.position = destination.transform.position;
+            Debug.Log(this.transform.position);
+        }
     }
 }
