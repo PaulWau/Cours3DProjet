@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Faux_Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 1370663963720940, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370663963720940, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4290572933777274, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -67,6 +75,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3839973
+      objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4565022
+      objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Size.z
+      value: 1.4195986
+      objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Center.x
+      value: 0.019655319
+      objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Center.y
+      value: 0.72824836
+      objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_Center.z
+      value: 0.004793429
+      objectReference: {fileID: 0}
+    - target: {fileID: 65933539368945326, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b85eaadde47cd974aa25d9bd3ae6b8c5, type: 3}
 --- !u!1 &7544754369086626474 stripped
@@ -88,5 +128,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
