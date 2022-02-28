@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="" />
+    <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Chemin.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Chemin.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cube_Chemin.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cube_Chemin.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Faux_Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Faux_Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManageGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManageGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +72,11 @@
       <workItem from="1645713071317" duration="4397000" />
       <workItem from="1645800676911" duration="14245000" />
       <workItem from="1645880816213" duration="4336000" />
+      <workItem from="1645958808627" duration="1259000" />
+      <workItem from="1645961307426" duration="2530000" />
+      <workItem from="1645997115775" duration="542000" />
+      <workItem from="1646001131623" duration="7000" />
+      <workItem from="1646007986554" duration="414000" />
     </task>
     <servers />
   </component>

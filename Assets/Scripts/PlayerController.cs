@@ -11,17 +11,20 @@ public class PlayerController : MonoBehaviour
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
     private Transform playerTransform;
-    private float yamn=0f;
     private float pitch = 0f;
     private float sensi = 6f;
     private bool isinmove = false;
+    [SerializeField] private Camera camera;
     
     private void Start()
     {
+        Rigidbody rigid=gameObject.GetComponent(typeof(Rigidbody)) as Rigidbody;
         Cursor.lockState = CursorLockMode.Locked;
         playerTransform = transform;
         controller = gameObject.AddComponent<CharacterController>();
+        rigid.AddForce(new Vector3(0,10,0));
         this.setgravity(false);
+
     }
 
     public void setisinmove()
@@ -58,10 +61,10 @@ public class PlayerController : MonoBehaviour
                         
                         gameObject.transform.position = move;
                     }
-                    yamn += Input.GetAxis("Mouse X")*sensi;
+                    
                     pitch -= Input.GetAxis("Mouse Y")*sensi;
                     pitch = Mathf.Clamp(pitch, -90f, 90f);
-                    transform.eulerAngles = new Vector3(pitch, yamn, 0f);
+                    transform.eulerAngles = new Vector3(0f, camera.transform.eulerAngles.y, 0f);
                     // Changes the height position of the player..
                     if (Input.GetButtonDown("Jump") && groundedPlayer)
                     {
@@ -70,6 +73,7 @@ public class PlayerController : MonoBehaviour
                     
                     playerVelocity.y += gravityValue * Time.deltaTime;
                     controller.Move(playerVelocity * Time.deltaTime);
+                    
         }
 
         
