@@ -45,6 +45,11 @@ public class GameManager : MonoBehaviour
         playerInterface.GetComponent<IndicatorReference>().AmmoIndicator.text = playerAmmo.ToString();
     }
 
+    public static void ChangeWeapon()
+    {
+        
+    }
+
     public static void TakeDamage(int damageTaken)
     {
         if (playerLife - damageTaken <= playerLifeMin)
