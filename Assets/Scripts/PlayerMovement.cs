@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
                     Vector3 move = transform.right * x + transform.forward * y;
                     controller.Move(move * speed * Time.deltaTime);
             
-                    Debug.Log(isGrounded);
+                    //Debug.Log(isGrounded);
                     if (isGrounded && Input.GetButton("Jump"))
                     {
                         velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
