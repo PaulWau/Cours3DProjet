@@ -14,7 +14,7 @@ public class ShootScript : MonoBehaviour
             Rigidbody p = Instantiate(projectile, transform.position + transform.right * 0.8f, Quaternion.identity);
             p.transform.SetParent(bulletHolder);
             p.velocity = transform.right * speed;
-            Debug.Log("bang");
+            //Debug.Log("bang");
         }
     }
 }
