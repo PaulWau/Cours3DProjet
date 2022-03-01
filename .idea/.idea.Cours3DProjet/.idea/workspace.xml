@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TrueMonter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TrueMonter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneLouis.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneLouis.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonsterKill.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonsterKill.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonsterMove.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonsterMove.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript/PlayerMovement.cs" afterDir="false" />
-    </list>
+    <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +66,8 @@
       <workItem from="1646052479989" duration="4136000" />
       <workItem from="1646073808250" duration="2041000" />
       <workItem from="1646126185096" duration="5354000" />
+      <workItem from="1646172147135" duration="255000" />
+      <workItem from="1646172417556" duration="4763000" />
     </task>
     <servers />
   </component>
