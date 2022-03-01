@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     //Settings variables
     public static GameObject settingsMenu;
     public static GameObject playerInterface;
+    public static GameObject player;
+    public static GameObject _playerPrefab;
     public static int sensiValue;
     public static int sensiMax = 1000;
     public static int sensiMin = 50;
@@ -43,7 +46,10 @@ public class GameManager : MonoBehaviour
 
         playerInterface.GetComponent<IndicatorReference>().LifeIndicator.text = playerLife.ToString();
         playerInterface.GetComponent<IndicatorReference>().AmmoIndicator.text = playerAmmo.ToString();
+
+        
     }
+    
 
     public static void ChangeWeapon()
     {
@@ -119,5 +125,17 @@ public class GameManager : MonoBehaviour
         }
         playerInterface.GetComponent<IndicatorReference>().LifeIndicator.text = playerLife.ToString();
     }
-    
+    public static void PlayerSpawn(Vector3 CoordOfPlayer)
+    {
+        if (_playerPrefab == null)
+        {
+            _playerPrefab = Resources.Load<GameObject>("First Person Player");
+        }
+
+            if (player != null)
+        {
+            Destroy(player);
+        }
+        player = Instantiate(_playerPrefab, CoordOfPlayer, quaternion.identity);
+    }
 }

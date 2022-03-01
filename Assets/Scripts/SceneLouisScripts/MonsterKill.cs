@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MonsterKill : MonoBehaviour
 {
-    private static LayerMask bulletLayer;
-    private static int hpMonster = 100 ;
+    private LayerMask bulletLayer;
+    private int hpMonster = 100 ;
     private void Awake()
     {
         bulletLayer = LayerMask.NameToLayer("bullet");
