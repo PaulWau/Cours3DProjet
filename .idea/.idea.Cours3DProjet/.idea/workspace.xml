@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="" />
+=======
+    <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Police Text/Redressed-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Police Text/Redressed-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayingMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayingMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenePaul.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ScenePaul.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScenePaulScripts/ManageGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScenePaulScripts/ManageGame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,8 +74,17 @@
       <workItem from="1645713071317" duration="4397000" />
       <workItem from="1645800676911" duration="14245000" />
       <workItem from="1645880816213" duration="4336000" />
+<<<<<<< Updated upstream
       <workItem from="1645988576598" duration="4759000" />
       <workItem from="1646083026875" duration="1458000" />
+=======
+      <workItem from="1645988576598" duration="3868000" />
+      <workItem from="1646052479989" duration="4136000" />
+      <workItem from="1646073808250" duration="2041000" />
+      <workItem from="1646126185096" duration="5354000" />
+      <workItem from="1646167880726" duration="3000" />
+      <workItem from="1646171644094" duration="1000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

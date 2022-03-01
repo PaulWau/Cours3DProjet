@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManageGame : MonoBehaviour
+public class ScenePaulFonctionnement : MonoBehaviour
 {
     [SerializeField] private GameObject Chemin;
     [SerializeField] private GameObject Holes;
@@ -13,6 +13,7 @@ public class ManageGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         StartCoroutine(StartLevel2());
         positioninit= Move.transform.position;
         Debug.Log(positioninit);
