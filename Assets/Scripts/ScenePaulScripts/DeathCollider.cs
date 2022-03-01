@@ -9,7 +9,7 @@ public class DeathCollider : MonoBehaviour
     {
         if (GameManager.player == other.gameObject)
         {
-            ManageGame.RespawnPlayer();
+            ScenePaulFonctionnement.RespawnPlayer();
         }
     }
 }
