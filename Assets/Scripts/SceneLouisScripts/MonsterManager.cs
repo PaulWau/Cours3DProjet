@@ -4,11 +4,11 @@
  using UnityEngine.UI;
  public class MonsterManager : MonoBehaviour
  {
-     
-     int MoveSpeed = 4;
      int MaxDist = 1000;
      int MinDist = 5;
      private bool canDoDamage = true;
+     public static int nbOfMonster = 0;
+     [SerializeField] private MonsterType monsterStats;
 
  
      void Update()
@@ -18,14 +18,14 @@
          if (Vector3.Distance(transform.position, GameManager.player.transform.position) >= MinDist)
          {
 
-             transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+             transform.position += transform.forward * monsterStats.speed * Time.deltaTime;
          }
 
          if (Vector3.Distance(transform.position, GameManager.player.transform.position) <= MinDist+0.1f)
          {
              if (canDoDamage)
              {
-                 GameManager.TakeDamage(10);
+                 GameManager.TakeDamage(monsterStats.damageOnPlayer);
                  Debug.Log(GameManager.playerLife);
                  StartCoroutine(TakeDamageRate());
              }

@@ -5,14 +5,27 @@ using UnityEngine;
 public class MonsterSpawn : MonoBehaviour
 {
     [SerializeField] private GameObject monster;
-    void Start()
-    {
-        Instantiate(monster, transform.position + transform.right * 0.8f, Quaternion.identity);
-    }
-
-    // Update is called once per frame
+    public int maxSpawn = 30;
+    private bool canSpawn = true;
     void Update()
     {
-        
+        if (canSpawn)
+        {
+            if (MonsterManager.nbOfMonster < maxSpawn)
+            {
+                Instantiate(monster, transform.position + transform.right * 0.8f, Quaternion.identity);
+                MonsterManager.nbOfMonster += 1;
+                Debug.Log(MonsterManager.nbOfMonster);
+                StartCoroutine(MonsterCanSpawn());
+            }
+
+        }
+
+    }
+    private IEnumerator MonsterCanSpawn()
+    {
+        canSpawn = false;
+        yield return new WaitForSeconds(2f);
+        canSpawn = true;
     }
 }

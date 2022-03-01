@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class MonsterType : ScriptableObject
 {
-    public float hpMonster;
+    public float hpMonsterMax;
     public float speed;
-    public float damageOnPlayer;
+    public int damageOnPlayer;
 }

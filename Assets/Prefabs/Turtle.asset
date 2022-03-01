@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a989402149888044ebfcb2b54ebe0056, type: 3}
   m_Name: Turtle
   m_EditorClassIdentifier: 
-  hpMonster: 100
-  speed: 4
-  damageOnPlayer: 10
+  hpMonsterMax: 150
+  speed: 8
+  damageOnPlayer: 20
