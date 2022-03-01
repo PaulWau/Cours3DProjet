@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float groundDistance = 0.3f;
     public LayerMask groundMask;
 
-    
     private Vector3 velocity;
     private bool isGrounded;
     
@@ -26,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
+        SetSpeed();
         Vector3 move = transform.right * x + transform.forward * y;
         controller.Move(move * speed * Time.deltaTime);
 
@@ -36,9 +36,17 @@ public class PlayerMovement : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime * 2f;
         controller.Move(velocity * Time.deltaTime);
-        
-
     }
 
-
+    private void SetSpeed()
+    {
+        if (Input.GetButton("Sprint"))
+        {
+            speed = 20f;
+        }
+        else
+        {
+            speed = 10f;
+        }
+    }
 }

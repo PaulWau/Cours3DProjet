@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="" />
+=======
+    <list default="true" id="aba8e00e-5817-47ca-aa02-98d9b82d2b2e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cours3DProjet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TrueMonter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TrueMonter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Turtle.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Turtle.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/First Person Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/First Person Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneLouis.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneLouis.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterKill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterKill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/MonsterType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/SceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/ShootScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLouisScripts/ShootScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,8 +84,12 @@
       <workItem from="1646052479989" duration="4136000" />
       <workItem from="1646073808250" duration="2041000" />
       <workItem from="1646126185096" duration="5354000" />
+<<<<<<< Updated upstream
       <workItem from="1646172147135" duration="255000" />
       <workItem from="1646172417556" duration="4763000" />
+=======
+      <workItem from="1646162264245" duration="11539000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
