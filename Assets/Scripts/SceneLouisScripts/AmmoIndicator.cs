@@ -23,13 +23,6 @@ public class AmmoIndicator : MonoBehaviour
     private void Update()
     {
         SetAmmo();
-        ReloadAmmo();
     }
-    private void ReloadAmmo()
-    {
-        if (Input.GetButton("Reload"))
-        {
-            GameManager.playerAmmo = GameManager.playerAmmoMax;
-        }
-    }
+ 
 }
