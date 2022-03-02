@@ -10,6 +10,7 @@ public class ShootScript : MonoBehaviour
     [CanBeNull] public AudioSource reloadSound;
 
     [SerializeField] private Animator animator;
+    [SerializeField] private ParticleSystem particulesShot;
     private bool canReload = true;
     
     void Update()
@@ -27,6 +28,7 @@ public class ShootScript : MonoBehaviour
             {
                 animator.SetBool("Fire",true);
                 shootSound.Play();
+                particulesShot.Play();
                 Rigidbody p = Instantiate(projectile, transform.position + transform.right * 0.8f, Quaternion.identity);
                 //p.transform.SetParent(bulletHolder);
                 p.velocity = transform.right * speed;
