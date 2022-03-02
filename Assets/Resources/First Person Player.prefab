@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8121446929527050832}
   - component: {fileID: 8121446929527050839}
   - component: {fileID: 8121446929527050838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8121446929854815767}
   - component: {fileID: 8121446929854815760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5816459718223844689, guid: 8e9f7e48f37be1f46981a4f1c88734e9, type: 3}
   speed: 100
-  bulletHolder: {fileID: 954360151431720623, guid: e3d56158ebe460445a55c90d412dd740, type: 3}
 --- !u!1 &8121446930270887469
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +156,7 @@ GameObject:
   - component: {fileID: 8121446930270887465}
   - component: {fileID: 8121446930270887464}
   - component: {fileID: 8121446930270887471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +253,7 @@ GameObject:
   - component: {fileID: 8121446930379982779}
   - component: {fileID: 8121446930379982758}
   - component: {fileID: 8121446930379982759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -403,7 +402,7 @@ GameObject:
   - component: {fileID: 8121446930496836269}
   - component: {fileID: 8121446930496836268}
   - component: {fileID: 8121446930496836259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +497,7 @@ GameObject:
   - component: {fileID: 8121446930859738540}
   - component: {fileID: 8121446930859738531}
   - component: {fileID: 8121446930859738530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Viseur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8121446931047608793}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -622,7 +621,7 @@ GameObject:
   - component: {fileID: 8121446931138037077}
   - component: {fileID: 8121446931138037076}
   - component: {fileID: 8121446931138037078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: First Person Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}

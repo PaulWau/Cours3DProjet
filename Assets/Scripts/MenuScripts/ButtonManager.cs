@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -103,7 +104,8 @@ public class ButtonManager : MonoBehaviour
 
     public void PlayButton()
     {
-        
+        SceneManager.LoadScene("SceneLouis");
+        GameManager.playerInterface.SetActive(true);
     }
 
 }
