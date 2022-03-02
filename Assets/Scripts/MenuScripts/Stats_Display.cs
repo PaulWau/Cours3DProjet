@@ -15,8 +15,8 @@ public class Stats_Display : MonoBehaviour
         textlife.text = " Restantes : " + GameManager.playerLife;
         Debug.Log(Time.realtimeSinceStartup);
         int timer=(int)Time.realtimeSinceStartup;
-        texttimeLevel1.text="Temps pass� sur le niveau 1: "+timer/60+" minutes, "+timer%60+" secondes";
-        texttimeLevel2.text="Temps pass� sur le niveau 2: "+timer/60+" minutes, "+timer%60+" secondes";
+        texttimeLevel1.text="Temps passe sur le niveau 1: "+(int)GameManager.timeScene1/60+" minutes, "+(int)GameManager.timeScene1%60+" secondes";
+        texttimeLevel2.text="Temps passe sur le niveau 2: "+(int)GameManager.timeScene2/60+" minutes, "+(int)GameManager.timeScene2%60+" secondes";
         //texttimeLevel1.text = Time.realtimeSinceStartup;
     }
 

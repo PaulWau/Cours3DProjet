@@ -27,7 +27,9 @@ public class GameManager : MonoBehaviour
     public static int playerAmmoMin = 0;
 
     public static bool inGame = false;
-    
+
+    public static float timeScene1;
+    public static float timeScene2;
 
     private void Start()
     {

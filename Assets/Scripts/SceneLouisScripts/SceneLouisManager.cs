@@ -13,6 +13,7 @@ public class SceneLouisManager : MonoBehaviour
     private void Update()
     {
         PlayerDeath();
+        GameManager.timeScene1 = Time.timeSinceLevelLoad;
         //if (playerIsDead)
         {
             //playerIsDead = false;

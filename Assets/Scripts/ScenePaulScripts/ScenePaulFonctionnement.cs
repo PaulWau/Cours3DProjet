@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,7 +13,12 @@ public class ScenePaulFonctionnement : MonoBehaviour
         positioninit = GameObject.Find("Point Spawn Player").transform.position;
         StartCoroutine(StartLevel2());
     }
-    
+
+    private void Update()
+    {
+        GameManager.timeScene2 = Time.timeSinceLevelLoad;
+    }
+
 
     private IEnumerator StartLevel2()
     {
