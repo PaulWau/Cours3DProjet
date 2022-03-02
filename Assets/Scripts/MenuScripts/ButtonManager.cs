@@ -115,4 +115,12 @@ public class ButtonManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void dropMenu(int renderDistance)
+    {
+        //0 pour low
+        //1 pour medium
+        //2 pour high
+        GameManager.playerRenderDistance = renderDistance;
+    }
+
 }

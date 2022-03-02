@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     public static float timeScene1;
     public static float timeScene2;
 
+    public static int playerRenderDistance;
     private void Start()
     {
         DontDestroyOnLoad(this);

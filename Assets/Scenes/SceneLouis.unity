@@ -1960,6 +1960,10 @@ PrefabInstance:
       propertyPath: m_LightmapParameters
       value: 
       objectReference: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1135971776658798068, guid: 50be1d95146351c46b46b478e100d4d9, type: 3}
+      propertyPath: m_DetailObjectDensity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1135971776658798070, guid: 50be1d95146351c46b46b478e100d4d9, type: 3}
       propertyPath: m_Name
       value: Ground
