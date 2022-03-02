@@ -33,4 +33,5 @@ public class SceneLouisManager : MonoBehaviour
             GameManager.SetPlayerLife(GameManager.playerLifeMax);
         }
     }
+
 }

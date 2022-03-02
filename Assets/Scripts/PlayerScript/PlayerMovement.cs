@@ -1,4 +1,10 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.Profiling.Memory.Experimental;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +19,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
     
+    private LayerMask portailLayer;
+
+    private void Awake()
+    {
+        portailLayer = LayerMask.NameToLayer("PortailScenePaultre");
+        Debug.Log(portailLayer);
+    }
+
     void Update()
     {
     
@@ -44,6 +58,16 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             speed = 10f;
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == portailLayer)
+        {
+            Debug.Log(portailLayer);
+            SceneManager.LoadScene("ScenePaul");
+            GameManager.playerInterface.SetActive(true);
         }
     }
 }
