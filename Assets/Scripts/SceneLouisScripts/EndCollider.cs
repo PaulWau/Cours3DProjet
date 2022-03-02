@@ -7,7 +7,9 @@ public class EndCollider : MonoBehaviour
     public static bool canEnd = false;
     private void OnTriggerEnter(Collider other)
     {
-        
+        MonsterManager.nbOfKill = 0;
+        MonsterManager.nbOfMonster = 0;
+        EndCollider.canEnd = false;
         SceneManager.LoadScene("ScenePaul");
     }
 

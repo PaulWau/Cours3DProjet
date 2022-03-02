@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public static float timeScene2;
 
     public static int playerRenderDistance;
+    
     private void Start()
     {
         DontDestroyOnLoad(this);
@@ -147,10 +148,18 @@ public class GameManager : MonoBehaviour
             _playerPrefab = Resources.Load<GameObject>("First Person Player");
         }
 
-            if (player != null)
+        if (player != null)
         {
             Destroy(player);
         }
         player = Instantiate(_playerPrefab, CoordOfPlayer, quaternion.identity);
+    }
+
+    public static void resetStaticVariable()
+    {
+        playerLife = playerLifeMax;
+        playerAmmo = playerAmmoMax;
+        timeScene1 = 0;
+        timeScene2 = 0;
     }
 }

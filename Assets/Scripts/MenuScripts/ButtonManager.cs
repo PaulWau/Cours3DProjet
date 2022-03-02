@@ -123,4 +123,11 @@ public class ButtonManager : MonoBehaviour
         GameManager.playerRenderDistance = renderDistance;
     }
 
+    public void RestartButton()
+    {
+        GameManager.playerInterface.SetActive(false);
+        SceneManager.LoadScene("PlayingMenuAfterRestart");
+        GameManager.resetStaticVariable();
+    }
+
 }

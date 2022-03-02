@@ -2,7 +2,6 @@
  using UnityEngine;
  public class MonsterManager : MonoBehaviour
  {
-     int MaxDist = 1000;
      int MinDist = 5;
      private bool canDoDamage = true;
      public static int nbOfMonster = 0;
