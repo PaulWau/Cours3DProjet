@@ -13,6 +13,6 @@ public class SoundVolumeManager : MonoBehaviour
 
     void Update()
     {
-        _selfAudioSource.volume = GameManager.soundVolume;
+        _selfAudioSource.volume = GameManager.soundVolume/100f;
     }
 }

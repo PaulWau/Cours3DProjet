@@ -12,6 +12,6 @@ public class MusicVolumeManager : MonoBehaviour
 
     void Update()
     {
-        _selfAudioSource.volume = GameManager.musicVolume;
+        _selfAudioSource.volume = GameManager.musicVolume/100f;
     }
 }

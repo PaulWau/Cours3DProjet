@@ -2,21 +2,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private CharacterController controller;
+    [SerializeField] private AudioSource _jumpSound;
+    [SerializeField] private CharacterController _controller;
     public float speed = 10f;
     public float jumpHeight = 3f;
     public float gravity = -9.81f;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundDistance = 0.3f;
+    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private float _groundDistance = 0.3f;
     public LayerMask groundMask;
 
-    private Vector3 velocity;
-    private bool isGrounded;
+    private Vector3 _velocity;
+    private bool _isGrounded;
     
     void Update()
     {
     
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        _isGrounded = Physics.CheckSphere(_groundCheck.position, _groundDistance, groundMask);
 
         
         float x = Input.GetAxis("Horizontal");
@@ -24,15 +25,16 @@ public class PlayerMovement : MonoBehaviour
 
         SetSpeed();
         Vector3 move = transform.right * x + transform.forward * y;
-        controller.Move(move * speed * Time.deltaTime);
+        _controller.Move(move * speed * Time.deltaTime);
 
         //Debug.Log(isGrounded);
-        if (isGrounded && Input.GetButton("Jump"))
+        if (_isGrounded && Input.GetButton("Jump"))
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            _jumpSound.Play();
+            _velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
-        velocity.y += gravity * Time.deltaTime * 2f;
-        controller.Move(velocity * Time.deltaTime);
+        _velocity.y += gravity * Time.deltaTime * 2f;
+        _controller.Move(_velocity * Time.deltaTime);
     }
 
     private void SetSpeed()
