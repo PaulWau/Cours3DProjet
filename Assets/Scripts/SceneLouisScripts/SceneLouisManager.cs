@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneLouisManager : MonoBehaviour
 {
     [SerializeField] private GameObject pointSpawnPlayer;
     //private bool playerIsDead = false;

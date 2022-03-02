@@ -101,5 +101,9 @@ public class ButtonManager : MonoBehaviour
         GameManager.settingsMenu.SetActive(true);
     }
 
+    public void PlayButton()
+    {
+        
+    }
 
 }
