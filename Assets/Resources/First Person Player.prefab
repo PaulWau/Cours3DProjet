@@ -106,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8121446929854815767}
   - component: {fileID: 8121446929854815760}
+  - component: {fileID: 5478928027408023132}
   m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
@@ -146,6 +147,26 @@ MonoBehaviour:
   speed: 100
   shootSound: {fileID: 5276443076864736031}
   reloadSound: {fileID: 2148069407013354704}
+  animator: {fileID: 5478928027408023132}
+--- !u!95 &5478928027408023132
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8121446929854815766}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1cb1ec15075e2a2418ef9d6221728c8e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8121446930270887469
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,14 +862,14 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8333806490047301637, guid: c4ac665116658fa408642fb29cdeca3c, type: 3}
   m_PrefabInstance: {fileID: 3221732595479535365}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1654840279685182654 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4198138592242854843, guid: c4ac665116658fa408642fb29cdeca3c, type: 3}
-  m_PrefabInstance: {fileID: 3221732595479535365}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &8513021816486644151 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6526191420750730930, guid: c4ac665116658fa408642fb29cdeca3c, type: 3}
+  m_PrefabInstance: {fileID: 3221732595479535365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1654840279685182654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4198138592242854843, guid: c4ac665116658fa408642fb29cdeca3c, type: 3}
   m_PrefabInstance: {fileID: 3221732595479535365}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &5870903655162482474
