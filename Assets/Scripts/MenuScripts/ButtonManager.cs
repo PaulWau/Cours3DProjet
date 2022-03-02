@@ -110,4 +110,9 @@ public class ButtonManager : MonoBehaviour
         GameManager.playerInterface.SetActive(true);
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }
