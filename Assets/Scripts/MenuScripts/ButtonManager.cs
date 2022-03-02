@@ -94,6 +94,10 @@ public class ButtonManager : MonoBehaviour
     public void ResumeButton()
     {
         GameManager.settingsMenu.SetActive(false);
+        if (GameManager.inGame)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
     public void OpenButton()
     {

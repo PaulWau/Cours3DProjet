@@ -1,3 +1,4 @@
+using System;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
     public static int playerAmmoMax = 60;
     public static int playerAmmoMin = 0;
 
+    public static bool inGame = false;
 
     private void Start()
     {
@@ -46,7 +48,19 @@ public class GameManager : MonoBehaviour
 
         
     }
-    
+
+    private void Update()
+    {
+        if (player == null)
+        {
+            inGame = false;
+        }
+        else
+        {
+            inGame = true;
+        }
+    }
+
 
     public static void ChangeWeapon()
     {

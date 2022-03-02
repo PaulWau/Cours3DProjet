@@ -14,6 +14,8 @@ public class MouseLook : MonoBehaviour
     void Update()
     {
         SensiUpdate();
+        OpenSettings();
+        
         float mouseX = Input.GetAxis("Mouse X")* MouseSensibility * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y")* MouseSensibility * Time.deltaTime;
 
@@ -27,5 +29,26 @@ public class MouseLook : MonoBehaviour
     private void SensiUpdate()
     {
         MouseSensibility = GameManager.sensiValue;
+    }
+
+    private void OpenSettings()
+    {
+        if (GameManager.settingsMenu.activeSelf)
+        {
+            if (Input.GetButtonUp("Fire2"))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                GameManager.settingsMenu.SetActive(false);
+            }
+        }
+        else
+        {
+            if (Input.GetButtonUp("Fire2"))
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+                GameManager.settingsMenu.SetActive(true);
+            }
+        }
+
     }
 }
