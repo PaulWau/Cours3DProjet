@@ -1,14 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class ShootScript : MonoBehaviour
 {
     [SerializeField] Rigidbody projectile;
     [SerializeField] float speed = 100;
-    public AudioSource shootSound;
-    public AudioSource reloadSound;
+    [CanBeNull] public AudioSource shootSound;
+    [CanBeNull] public AudioSource reloadSound;
     //[SerializeField] private Transform bulletHolder;
     
     void Update()
