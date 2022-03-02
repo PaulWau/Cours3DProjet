@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public static int playerAmmoMin = 0;
 
     public static bool inGame = false;
+    
 
     private void Start()
     {

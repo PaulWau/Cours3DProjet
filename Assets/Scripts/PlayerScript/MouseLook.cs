@@ -35,7 +35,7 @@ public class MouseLook : MonoBehaviour
     {
         if (GameManager.settingsMenu.activeSelf)
         {
-            if (Input.GetButtonUp("Fire2"))
+            if (Input.GetKeyUp(KeyCode.Escape))
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 GameManager.settingsMenu.SetActive(false);
@@ -43,7 +43,7 @@ public class MouseLook : MonoBehaviour
         }
         else
         {
-            if (Input.GetButtonUp("Fire2"))
+            if (Input.GetKeyUp(KeyCode.Escape))
             {
                 Cursor.lockState = CursorLockMode.Confined;
                 GameManager.settingsMenu.SetActive(true);
