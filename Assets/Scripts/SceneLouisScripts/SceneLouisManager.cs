@@ -3,6 +3,7 @@ using UnityEngine;
 public class SceneLouisManager : MonoBehaviour
 {
     [SerializeField] private GameObject pointSpawnPlayer;
+    [SerializeField] private AudioSource sounddeath;
     //private bool playerIsDead = false;
 
     private void Awake()
@@ -29,7 +30,7 @@ public class SceneLouisManager : MonoBehaviour
         if (GameManager.playerLife <= GameManager.playerLifeMin)
         {
             //playerIsDead = true;
-
+            sounddeath.Play();
             GameManager.PlayerSpawn(pointSpawnPlayer.transform.position);
             GameManager.SetPlayerLife(GameManager.playerLifeMax);
         }

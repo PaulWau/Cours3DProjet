@@ -6,6 +6,7 @@ public class ScenePaulFonctionnement : MonoBehaviour
 {
     [SerializeField] private GameObject Chemin;
     [SerializeField] private GameObject Holes;
+    
     private static Vector3 positioninit;
     // Start is called before the first frame update
     void Awake()
