@@ -464,6 +464,7 @@ GameObject:
   - component: {fileID: 5929994213937341904}
   - component: {fileID: 5929994213937341906}
   - component: {fileID: 5929994213937341905}
+  - component: {fileID: 5196894364332881071}
   m_Layer: 5
   m_Name: MunitionIndicator
   m_TagString: Untagged
@@ -587,6 +588,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5196894364332881071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5929994213937341911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c1e6b51e360944086228801c0faae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoText: {fileID: 5929994213937341905}
 --- !u!1 &5929994214049040377
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +612,7 @@ GameObject:
   - component: {fileID: 5929994214049040378}
   - component: {fileID: 5929994214049040356}
   - component: {fileID: 5929994214049040379}
+  - component: {fileID: 2849533376414865583}
   m_Layer: 5
   m_Name: LifeIndicator
   m_TagString: Untagged
@@ -721,6 +736,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2849533376414865583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5929994214049040377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa4f04da1075164aa0214ad43252ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helthText: {fileID: 5929994214049040379}
 --- !u!1 &5929994214190334585
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,12 +11,17 @@ public class ShootScript : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (GameManager.playerAmmo > 0)
         {
-            Rigidbody p = Instantiate(projectile, transform.position + transform.right * 0.8f, Quaternion.identity);
-            //p.transform.SetParent(bulletHolder);
-            p.velocity = transform.right * speed;
-            //Debug.Log("bang");
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Rigidbody p = Instantiate(projectile, transform.position + transform.right * 0.8f, Quaternion.identity);
+                //p.transform.SetParent(bulletHolder);
+                p.velocity = transform.right * speed;
+                //Debug.Log("bang");
+                GameManager.playerAmmo -= 1;
+            }
         }
+            
     }
 }
