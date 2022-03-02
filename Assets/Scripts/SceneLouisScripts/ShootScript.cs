@@ -1,3 +1,4 @@
+using System.Collections;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -7,7 +8,9 @@ public class ShootScript : MonoBehaviour
     [SerializeField] float speed = 100;
     [CanBeNull] public AudioSource shootSound;
     [CanBeNull] public AudioSource reloadSound;
-    //[SerializeField] private Transform bulletHolder;
+
+    [SerializeField] private Animator animator;
+    private bool canReload = true;
     
     void Update()
     {
@@ -17,10 +20,12 @@ public class ShootScript : MonoBehaviour
 
     private void Shoot()
     {
+        animator.SetBool("Fire",false);
         if (GameManager.playerAmmo > 0)
         {
             if (Input.GetButtonDown("Fire1"))
             {
+                animator.SetBool("Fire",true);
                 shootSound.Play();
                 Rigidbody p = Instantiate(projectile, transform.position + transform.right * 0.8f, Quaternion.identity);
                 //p.transform.SetParent(bulletHolder);
@@ -32,10 +37,23 @@ public class ShootScript : MonoBehaviour
     }
     private void ReloadAmmo()
     {
-        if (Input.GetButton("Reload"))
+        animator.SetBool("Reload",false);
+        if (canReload)
         {
-            reloadSound.Play();
-            GameManager.playerAmmo = GameManager.playerAmmoMax;
+            if (Input.GetButtonUp("Reload"))
+            {
+                StartCoroutine(CanTReload());
+                animator.SetBool("Reload",true);
+                reloadSound.Play();
+                GameManager.playerAmmo = GameManager.playerAmmoMax;
+            }
         }
+    }
+
+    private IEnumerator CanTReload()
+    {
+        canReload = false;
+        yield return new WaitForSeconds(1f);
+        canReload = true;
     }
 }
