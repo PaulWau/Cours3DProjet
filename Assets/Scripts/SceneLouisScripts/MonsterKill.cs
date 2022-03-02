@@ -13,7 +13,6 @@ public class MonsterKill : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        
         if (collision.gameObject.layer == bulletLayer)
         {
             hpMonster -= 50;
@@ -21,9 +20,16 @@ public class MonsterKill : MonoBehaviour
             {
                 Destroy(transform.gameObject);
                 MonsterManager.nbOfMonster -= 1;
-                Debug.Log(MonsterManager.nbOfMonster);
+                if (MonsterManager.nbOfKill < 30)
+                {
+                    MonsterManager.nbOfKill += 1;
+                }
+                else
+                {
+                    EndCollider.canEnd = true;
+                }
+                
             }
-            Debug.Log(hpMonster);
         }
     }
 }

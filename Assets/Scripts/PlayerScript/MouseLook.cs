@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    private float _mouseSensitivity = 100f;
-    public Transform player;
-    private float _yawn;
-    private float _pitch;
+    public float MouseSensibility;
+    public Transform PlayerBody;
+    private float xRotation;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -14,12 +13,42 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _mouseSensitivity = GameManager.sensiValue;
-        _yawn += Input.GetAxis("Mouse X") * _mouseSensitivity/100f;
-        _pitch -= Input.GetAxis("Mouse Y") * _mouseSensitivity/100f;
-        _pitch = Mathf.Clamp(_pitch, -90f, 90f);
+        SensiUpdate();
+        OpenSettings();
+        
+        float mouseX = Input.GetAxis("Mouse X")* MouseSensibility * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y")* MouseSensibility * Time.deltaTime;
 
-        transform.eulerAngles = new Vector3(0f, _yawn, 0f);
-        player.eulerAngles = new Vector3(_pitch, 0f, 0f);
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        
+        transform.localRotation = Quaternion.Euler(xRotation,0f,0f);
+        PlayerBody.Rotate(Vector3.up * mouseX);
+    }
+
+    private void SensiUpdate()
+    {
+        MouseSensibility = GameManager.sensiValue;
+    }
+
+    private void OpenSettings()
+    {
+        if (GameManager.settingsMenu.activeSelf)
+        {
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                GameManager.settingsMenu.SetActive(false);
+            }
+        }
+        else
+        {
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+                GameManager.settingsMenu.SetActive(true);
+            }
+        }
+
     }
 }

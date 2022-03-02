@@ -6,6 +6,7 @@
      int MinDist = 5;
      private bool canDoDamage = true;
      public static int nbOfMonster = 0;
+     public static int nbOfKill = 0;
      [SerializeField] private MonsterType monsterStats;
 
  

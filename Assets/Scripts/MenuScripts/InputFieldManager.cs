@@ -25,6 +25,7 @@ public class InputFieldManager : MonoBehaviour
             inputValue = GameManager.sensiMax;
         }
         GameManager.sensiValue = inputValue;
+        Debug.Log(GameManager.sensiValue);
     }
     
     public void SoundInput(dynamic input)
