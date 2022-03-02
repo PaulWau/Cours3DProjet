@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
-    public float speed = 10f;
+    public float speed = 13f;
     public float jumpHeight = 3f;
     public float gravity = -9.81f;
     [SerializeField] private Transform groundCheck;
@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         float y = Input.GetAxis("Vertical");
 
         SetSpeed();
+        OpenMenu();
         Vector3 move = transform.right * x + transform.forward * y;
         controller.Move(move * speed * Time.deltaTime);
 
@@ -44,11 +45,33 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButton("Sprint"))
         {
-            speed = 20f;
+            speed = 18f;
         }
         else
         {
-            speed = 10f;
+            speed = 13f;
+        }
+    }
+
+    private void OpenMenu()
+    {
+        if (!GameManager.settingsMenu.activeSelf)
+        {
+            if (Input.GetButtonUp("Cancel"))
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+                GameManager.playerInterface.SetActive(false);
+                GameManager.settingsMenu.SetActive(true);
+            }
+        }
+        else
+        {
+            if (Input.GetButtonUp("Cancel"))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                GameManager.playerInterface.SetActive(true);
+                GameManager.settingsMenu.SetActive(false);
+            }
         }
     }
 }

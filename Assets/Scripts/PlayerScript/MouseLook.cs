@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    public float MouseSensibility = 100f;
-    public Transform PlayerBody;
-    private float xRotation;
+    private float _mouseSensitivity = 100f;
+    public Transform player;
+    private float _yawn;
+    private float _pitch;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -13,13 +14,12 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X")*MouseSensibility * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y")*MouseSensibility * Time.deltaTime;
+        _mouseSensitivity = GameManager.sensiValue;
+        _yawn += Input.GetAxis("Mouse X") * _mouseSensitivity/100f;
+        _pitch -= Input.GetAxis("Mouse Y") * _mouseSensitivity/100f;
+        _pitch = Mathf.Clamp(_pitch, -90f, 90f);
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        
-        transform.localRotation = Quaternion.Euler(xRotation,0f,0f);
-        PlayerBody.Rotate(Vector3.up * mouseX);
+        transform.eulerAngles = new Vector3(0f, _yawn, 0f);
+        player.eulerAngles = new Vector3(_pitch, 0f, 0f);
     }
 }

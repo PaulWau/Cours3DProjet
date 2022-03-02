@@ -3672,7 +3672,7 @@ GameObject:
   - component: {fileID: 899390176}
   - component: {fileID: 899390175}
   - component: {fileID: 899390174}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EndCollider
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
